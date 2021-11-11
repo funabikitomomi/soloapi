@@ -8,9 +8,9 @@
     "lint": "eslint --fix .",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "makeMigrate": "knex migrate:make --knexfile models/knexfile.js",
-    "migrate": "knex migrate:latest --knexfile models/knexfile.js",
-    "rollback": "knex migrate:rollback --knexfile models/knexfile.js ",
+    "makeMigrate": "knex migrate:make --knexfile src/models/knexfile.js",
+    "migrate": "knex migrate:latest --knexfile src/models/knexfile.js",
+    "rollback": "knex migrate:rollback --knexfile src/models/knexfile.js ",
     "precommit": "pretty-quick --staged"
   },
   "author": "Code Chrysalis",

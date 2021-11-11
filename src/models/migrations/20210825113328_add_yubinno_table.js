@@ -15,11 +15,10 @@ exports.up = function(knex, Promise) {
       .index(); // index this column
 
     t.string("yubinno", 7) // maximum length of 7 characters
-      .unique() // add a unique constraint to this column
       .notNullable() // add a not-null constraint to this column
       .index(); // index it
 
-    t.string("jyusyo", 100) // maximum length of 100 characters
+    t.string("jyusyo", 500) // maximum length of 500 characters
       .notNullable() // add a not-null constraint to this column
       .index(); // index it
 
